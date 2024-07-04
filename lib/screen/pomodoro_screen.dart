@@ -11,7 +11,7 @@ class PomodoroScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('POMOTIMER'),
+        title: const Text('POMO  TIMER'),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
@@ -24,7 +24,7 @@ class PomodoroScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'FOCUS',
+              'Qara',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 20),
@@ -35,7 +35,7 @@ class PomodoroScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [1, 5, 15, 30, 60].map((int minutes) {
+              children: [1, 5, 25, 30, 60].map((int minutes) {
                 return DurationButton(minutes: minutes);
               }).toList(),
             ),
